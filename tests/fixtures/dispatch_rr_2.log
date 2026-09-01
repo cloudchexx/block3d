@@ -1,0 +1,2 @@
+READ_DISPATCH strategy=round_robin
+BENCHMARK_RESULT cache=cold_scrubbed mode=random axis=x total_sec=9.000 read_sec=8.000 write_sec=1.000 avg_ms=90.000 slices_per_sec=11.111 count=100 bytes=1 reader_pool_workers=4 reader_pool_jobs=1 reader_pool_serial_fallbacks=0 output_sync=requested plan_hash=abc0000000000001

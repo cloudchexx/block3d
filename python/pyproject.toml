@@ -1,0 +1,15 @@
+[build-system]
+requires = ["scikit-build-core>=0.8", "pybind11>=2.11", "numpy"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "block3d"
+version = "1.0.0"
+description = "Python bindings for block3d"
+requires-python = ">=3.8"
+dependencies = ["numpy"]
+
+[tool.scikit-build]
+cmake.source-dir = ".."
+cmake.args = ["-DBLOCK3D_BUILD_PYTHON=ON", "-DBLOCK3D_BUILD_TESTS=OFF", "-DBLOCK3D_BUILD_CLI=OFF", "-DBLOCK3D_BUILD_RUN_TEST=OFF", "-DBLOCK3D_BUILD_EXAMPLES=OFF"]
+wheel.packages = []
